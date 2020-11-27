@@ -69,6 +69,7 @@
             font-size: 30px;
             margin: 10px;
             transition: all 0.4s ease-in-out;
+            color: white;
         }
         
         #sietk:hover {
@@ -100,15 +101,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: chartreuse;
             margin: 10px;
             padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
             transition: all 0.4s ease-in-out;
         }
         
         #subname:hover {
             text-shadow: 1px 1px 4px black;
-            border-radius: 5px;
+            border-radius: 10px;
         }
         
         .links {
@@ -117,7 +119,6 @@
             text-align: center;
             align-items: center;
             font-size: 20px;
-            background-color: cornsilk;
             margin: 10px;
             padding: 10px;
             color: rgb(27, 0, 88);
@@ -126,6 +127,27 @@
         
         .links:hover {
             text-shadow: 2px 1px 15px black;
+        }
+        
+        .linksx {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(27, 0, 88);
+            text-decoration: none;
+        }
+        
+        .linksx:hover {
+            text-shadow: 2px 1px 15px black;
+        }
+        
+        .icsms {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
         
         #footlink {
@@ -140,7 +162,12 @@
         
         .footer {
             padding: 5px;
-            background-color: rgb(238, 0, 0);
+            background-image: url('./footbg.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #464646;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -178,6 +205,9 @@
                 padding: 5px;
                 margin: 5px;
             }
+            .linksx {
+                font-size: 13px;
+            }
             .footer {
                 font-size: 10px;
             }
@@ -202,51 +232,65 @@
             <p id="subname">
                 COA
             </p>
-            <a href="" class="links">COA unit - 1</a>
-            <a href="" class="links">COA unit - 2</a>
-            <a href="" class="links">COA unit - 3</a>
-            <a href="" class="links">COA unit - 4</a>
-            <a href="" class="links">COA unit - 5</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> COA unit - 1</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> COA unit - 2</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> COA unit - 3</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> COA unit - 4</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> COA unit - 5</a>
         </div>
         <div class="subjects">
             <p id="subname">
                 DBMS
             </p>
-            <a href="" class="links">DBMS unit - 1</a>
-            <a href="" class="links">DBMS unit - 2</a>
-            <a href="" class="links">DBMS unit - 3</a>
-            <a href="" class="links">DBMS unit - 4</a>
-            <a href="" class="links">DBMS unit - 5</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> DBMS unit - 1</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> DBMS unit - 2</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> DBMS unit - 3</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> DBMS unit - 4</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> DBMS unit - 5</a>
         </div>
         <div class="subjects">
             <p id="subname">
                 MPMC
             </p>
-            <a href="" class="links">MPMC unit - 1</a>
-            <a href="" class="links">MPMC unit - 2</a>
-            <a href="" class="links">MPMC unit - 3</a>
-            <a href="" class="links">MPMC unit - 4</a>
-            <a href="" class="links">MPMC unit - 5</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> MPMC unit - 1</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> MPMC unit - 2</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> MPMC unit - 3</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> MPMC unit - 4</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> MPMC unit - 5</a>
         </div>
         <div class="subjects">
             <p id="subname">
-                ICS
+                ICS / MS
             </p>
-            <a href="" class="links">ICS unit - 1</a>
-            <a href="" class="links">ICS unit - 2</a>
-            <a href="" class="links">ICS unit - 3</a>
-            <a href="" class="links">ICS unit - 4</a>
-            <a href="" class="links">ICS unit - 5</a>
+            <div class="icsms">
+                <div class="ics">
+                    <a href="" class="linksx"><i class="fas fa-hand-point-right"></i> ICS unit - 1</a>
+                    <a href="" class="linksx"><i class="fas fa-hand-point-right"></i> ICS unit - 2</a>
+                    <a href="" class="linksx"><i class="fas fa-hand-point-right"></i> ICS unit - 3</a>
+                    <a href="" class="linksx"><i class="fas fa-hand-point-right"></i> ICS unit - 4</a>
+                    <a href="" class="linksx"><i class="fas fa-hand-point-right"></i> ICS unit - 5</a>
+
+                </div>
+                <div class="ms">
+                    <a href="" class="linksx"><i class="fas fa-hand-point-right"></i> MS unit - 1</a>
+                    <a href="" class="linksx"><i class="fas fa-hand-point-right"></i> MS unit - 2</a>
+                    <a href="" class="linksx"><i class="fas fa-hand-point-right"></i> MS unit - 3</a>
+                    <a href="" class="linksx"><i class="fas fa-hand-point-right"></i> MS unit - 4</a>
+                    <a href="" class="linksx"><i class="fas fa-hand-point-right"></i> MS unit - 5</a>
+
+                </div>
+
+            </div>
         </div>
         <div class="subjects">
             <p id="subname">
                 CDS
             </p>
-            <a href="" class="links">CDS unit - 1</a>
-            <a href="" class="links">CDS unit - 2</a>
-            <a href="" class="links">CDS unit - 3</a>
-            <a href="" class="links">CDS unit - 4</a>
-            <a href="" class="links">CDS unit - 5</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> CDS unit - 1</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> CDS unit - 2</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> CDS unit - 3</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> CDS unit - 4</a>
+            <a href="" class="links"><i class="fas fa-hand-point-right"></i> CDS unit - 5</a>
         </div>
         <div class="subjects">
             <p id="subname">
