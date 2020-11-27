@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f84cbf777e.js" crossorigin="anonymous"></script>
+    <title>CSE - 1 SIETK</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(17, 255, 255);
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        #logo {
+            height: 9em;
+            width: 19em;
+            display: block;
+            margin: 20px;
+            border: 2px solid black;
+            transition: all 0.4s ease-in-out;
+        }
+        
+        #logo:hover {
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px black;
+        }
+        
+        .heading {
+            display: flex;
+            height: 10em;
+            width: 100%;
+            background-color: rgb(253, 255, 111);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: all 0.4s ease-in-out;
+        }
+        
+        #sietk {
+            font-size: 30px;
+            margin: 10px;
+            transition: all 0.4s ease-in-out;
+        }
+        
+        #sietk:hover {
+            text-shadow: 1px 1px 10px blue;
+        }
+        
+        .sem3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .subjects {
+            justify-self: center;
+            height: auto;
+            width: 95%;
+            border: 3px solid black;
+            border-radius: 5px;
+            margin: 15px;
+            transition: all 0.4s ease-in-out;
+        }
+        
+        .subjects:hover {
+            border-radius: 10px;
+            box-shadow: 4px 4px 5px black;
+        }
+        
+        #subname {
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: chartreuse;
+            margin: 10px;
+            padding: 10px;
+            transition: all 0.4s ease-in-out;
+        }
+        
+        #subname:hover {
+            text-shadow: 1px 1px 4px black;
+            border-radius: 5px;
+        }
+        
+        .links {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+            background-color: cornsilk;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(27, 0, 88);
+            text-decoration: none;
+        }
+        
+        .links:hover {
+            text-shadow: 2px 2px 5px black;
+        }
+        
+        #footlink {
+            color: rgb(227, 255, 68);
+            text-decoration: none;
+            transition: all 0.4s ease-in-out;
+        }
+        
+        #footlink:hover {
+            text-shadow: 2px 2px 5px black;
+        }
+        
+        .footer {
+            padding: 5px;
+            background-color: rgb(238, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(205, 248, 255);
+        }
+        
+        @media only screen and (max-width: 800px) {
+            #logo {
+                height: 4em;
+                width: 6em;
+                margin: 10px;
+            }
+            #sietk {
+                font-size: 15px;
+            }
+            .heading {
+                height: 5em;
+            }
+            .sem3 {
+                grid-template-columns: 1fr;
+            }
+            .subjects {
+                width: 95%;
+                height: auto;
+            }
+            #subname {
+                font-size: 20px;
+            }
+            .links {
+                font-size: 15px;
+                padding: 5px;
+                margin: 5px;
+            }
+            .footer {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <img id="logo" src="./sietk.png" alt="sietk">
+        <p id="sietk">
+            Siddharth Institute Of Engineering And Technology
+            <br> CSE - 1
+        </p>
+    </div>
+    <div class="sem3">
+        <div class="subjects">
+            <p id="subname">
+                COA
+            </p>
+            <a href="" class="links">COA unit - 1</a>
+            <a href="" class="links">COA unit - 2</a>
+            <a href="" class="links">COA unit - 3</a>
+            <a href="" class="links">COA unit - 4</a>
+            <a href="" class="links">COA unit - 5</a>
+        </div>
+        <div class="subjects">
+            <p id="subname">
+                DBMS
+            </p>
+            <a href="" class="links">DBMS unit - 1</a>
+            <a href="" class="links">DBMS unit - 2</a>
+            <a href="" class="links">DBMS unit - 3</a>
+            <a href="" class="links">DBMS unit - 4</a>
+            <a href="" class="links">DBMS unit - 5</a>
+        </div>
+        <div class="subjects">
+            <p id="subname">
+                MPMC
+            </p>
+            <a href="" class="links">MPMC unit - 1</a>
+            <a href="" class="links">MPMC unit - 2</a>
+            <a href="" class="links">MPMC unit - 3</a>
+            <a href="" class="links">MPMC unit - 4</a>
+            <a href="" class="links">MPMC unit - 5</a>
+        </div>
+        <div class="subjects">
+            <p id="subname">
+                ICS
+            </p>
+            <a href="" class="links">ICS unit - 1</a>
+            <a href="" class="links">ICS unit - 2</a>
+            <a href="" class="links">ICS unit - 3</a>
+            <a href="" class="links">ICS unit - 4</a>
+            <a href="" class="links">ICS unit - 5</a>
+        </div>
+        <div class="subjects">
+            <p id="subname">
+                CDS
+            </p>
+            <a href="" class="links">CDS unit - 1</a>
+            <a href="" class="links">CDS unit - 2</a>
+            <a href="" class="links">CDS unit - 3</a>
+            <a href="" class="links">CDS unit - 4</a>
+            <a href="" class="links">CDS unit - 5</a>
+        </div>
+        <div class="subjects">
+            <p id="subname">
+                IC
+            </p>
+            <a href="" class="links">IC unit - 1</a>
+            <a href="" class="links">IC unit - 2</a>
+            <a href="" class="links">IC unit - 3</a>
+            <a href="" class="links">IC unit - 4</a>
+            <a href="" class="links">IC unit - 5</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        All Copyrights &nbsp; <i class="fas fa-copyright"></i> &nbsp; Reserved At &nbsp;&nbsp;<a id="footlink" href="http://arshad272.github.io/home" target="__blank">Arshad. K</a>
+    </div>
+</body>
+
+</html>
