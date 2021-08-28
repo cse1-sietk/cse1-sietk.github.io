@@ -1591,6 +1591,20 @@ body.mcs-dragging button.mcs-button.mcs-horizontal.mcs-button-arrow {
 }
 
 .MagicScroll div a{
-    font-size: 0px;
     display: none;
+    font-size: 0px;
+}
+.MagicScroll span a{
+    display: none;
+    font-size: 0px;
+}
+
+#MagicScroll-624279206189 span a {
+    display: none;
+    font-size: 0px;
+}
+
+#MagicScroll-624279206189 div a {
+    display: none;
+    font-size: 0px;
 }
