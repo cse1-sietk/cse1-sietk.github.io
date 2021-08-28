@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header {
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+}
+.header .header-image {
+    width: 30%;
+    display: block;
+    float: left;
+}
+.header .header-img {
+    width: 70%;
+    display: flex;
+    justify-content:left;
+}
+.header .header-image1 {
+    width: 55%;
+}
+.header .header-image2 {
+    width: 7em;
+    height: 7em;
+}
+.header .header-image3 {
+    width: 60%;
+}
+
+.couns-code {
+    margin: 10px;
+}
+
+.callout {
+    z-index: 1;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    margin-left: 20px;
+    max-width: 300px;
+}
+
+.callout-header {
+    padding: 0px 5px;
+    background: rgb(92, 0, 0);
+    font-size: 25px;
+    color: white;
+}
+
+.callout-container {
+    padding: 5px;
+    background-color: rgb(153, 0, 0);
+    color: black
+}
+
+.closebtn {
+    position: absolute;
+    top: -18px;
+    right: 15px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: lightgrey;
+}
+
+/* 
+.blinking {
+    animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: #000;
+    }
+    49% {
+        color: rgb(255, 20, 20);
+    }
+    60% {
+        color: rgb(26, 0, 175);
+    }
+    99% {
+        color: rgb(0, 175, 38);
+    }
+    100% {
+        color: rgb(145, 0, 133);
+    }
+} */
+
+.header-navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(153, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: rgb(126, 0, 0);
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn, .dropbtn-right {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 205, 218);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content-right {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 205, 218);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: 183px;
+    margin-top: -50px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(99, 0, 0);
+    color: white;
+}
+
+.dropdown .dropdown-content .dropdown-right .dropbtn-right:hover {
+    background-color: rgb(150, 50, 50);
+    cursor: pointer;
+}
+
+.dropdown-content a:hover, .dropdown-content-right a:hover {
+    background-color: rgb(150, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    overflow: visible;
+    z-index: 1;
+    -webkit-animation: fadeEffect 0.7s;
+    animation: fadeEffect 0.7s;
+}
+
+.dropdown-right:hover .dropdown-content-right {
+    display: block;
+    overflow: visible;
+    z-index: 1;
+    -webkit-animation: fadeEffect 0.7s;
+    animation: fadeEffect 0.7s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* On smaller screens, decrease text size */
+
+.jssorl-004-double-tail-spin img {
+    animation-name: jssorl-004-double-tail-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-004-double-tail-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*jssor slider bullet skin 031 css*/
+
+.jssorb031 {
+    position: absolute;
+}
+
+.jssorb031 .i {
+    position: absolute;
+    cursor: pointer;
+}
+
+.jssorb031 .i .b {
+    fill: #000;
+    fill-opacity: 0.6;
+    stroke: #fff;
+    stroke-width: 1600;
+    stroke-miterlimit: 10;
+    stroke-opacity: 0.8;
+}
+
+.jssorb031 .i:hover .b {
+    fill: #fff;
+    fill-opacity: 1;
+    stroke: #000;
+    stroke-opacity: 1;
+}
+
+.jssorb031 .iav .b {
+    fill: #fff;
+    stroke: #000;
+    stroke-width: 1600;
+    fill-opacity: .6;
+}
+
+.jssorb031 .i.idn {
+    opacity: .3;
+}
+
+/*jssor slider arrow skin 051 css*/
+
+.jssora051 {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.jssora051 .a {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 360;
+    stroke-miterlimit: 10;
+}
+
+.jssora051:hover {
+    opacity: .8;
+}
+
+.jssora051.jssora051dn {
+    opacity: .5;
+}
+
+.jssora051.jssora051ds {
+    opacity: .3;
+    pointer-events: none;
+}
+
+.tabs-about-clg {
+    width: 60%;
+}
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: rgb(167, 36, 36);
+    color: white;
+}
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: rgb(90, 0, 0);
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: rgb(90, 0, 0);
+}
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Go from zero to full opacity */
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#Chairman .chairman-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#Chairman .chairman-image #chairman-image {
+    width: 14em;
+    height: 19em;
+}
+
+#Chairman .chairman-desc .chairman-desc-in {
+    padding: 20px;
+    text-align: left;
+}
+
+.news-and-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.news-and-tabs .news-auto-scroll {
+    width: 38%;
+    margin: 10px;
+}
+
+.news-auto-scroll .news-heading {
+    font-size: xx-large;
+    background-color: rgb(90, 0, 0);
+    color: white;
+    width: 90%;
+    padding: 4px;
+}
+
+.news-and-tabs .news-auto-scroll .holder {
+    /* background-color: rgb(219, 248, 255); */
+    width: 90%;
+    height: min-content;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.news-and-tabs .news-auto-scroll .holder .mask {
+    position: relative;
+    left: 0px;
+    top: 10px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.news-and-tabs .news-auto-scroll .holder ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.news-and-tabs .news-auto-scroll .holder ul li {
+    padding: 10px 0px;
+}
+
+.news-and-tabs .news-auto-scroll .holder ul li a {
+    color: rgb(12, 0, 78);
+    text-decoration: none;
+}
+
+.news-and-tabs .news-auto-scroll .holder ul li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.achievements-link {
+    color: blue;
+}
+
+.achievements-link:hover {
+    color: red;
+}
+.footer-fb-icons {
+    margin: 10px;
+    transition: all ease-in-out 0.6s;
+}
+.footer-tweet-icons {
+    margin: 10px;
+    transition: all ease-in-out 0.6s;
+}
+.footer-mail-icons {
+    margin: 10px;
+    transition: all ease-in-out 0.6s;
+}
+.footer-fb-icons:hover {
+    font-size: larger;
+    color: rgb(0, 0, 122);
+}
+.footer-tweet-icons:hover {
+    font-size: larger;
+    color: rgb(64, 64, 255);
+}
+.footer-mail-icons:hover {
+    font-size: larger;
+    color: red;
+}
+
+@media screen and (max-width: 740px) {
+    .header .header-image {
+        width: 95%;
+    }
+    .tabs-about-clg {
+        width: 100%;
+    }
+    .tab button {
+        /* margin: 0px; */
+        padding: 10px;
+    }
+    .news-and-tabs {
+        display: block;
+        width: 100%;
+    }
+    .news-and-tabs .news-auto-scroll {
+        width: 100%;
+    }
+}
+
+.header-image-phone {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .header .header-image-phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .header-image, .header .header-img {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .header .header-text {
+        font-size: large;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+        height: fit-content;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown-right {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content-right {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
