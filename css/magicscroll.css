@@ -1591,5 +1591,6 @@ body.mcs-dragging button.mcs-button.mcs-horizontal.mcs-button-arrow {
 }
 
 .MagicScroll div a{
+    font-size: 0px;
     display: none;
 }
